@@ -51,6 +51,7 @@ function buildNewImageButton(){
     const button = document.createElement('button');
     button.setAttribute('id', 'new-cat-button');
     button.setAttribute('type', 'button');
+    button.classList.add('hover');
     button.innerText = 'Load New Cat Image';
     document.body.append(button);
 
@@ -66,11 +67,13 @@ function buildPopularityDiv(){
     const upvote = document.createElement('button');
     upvote.classList.add('vote-button');
     upvote.setAttribute('id', 'upvote-button');
+    upvote.classList.add('hover');
     upvote.innerText = '👍';
 
     const downvote = document.createElement('button');
     downvote.classList.add('vote-button');
     downvote.setAttribute('id', 'downvote-button');
+    downvote.classList.add('hover');
     downvote.innerText = '👎';
 
     // make a header with a span for the vote amount
@@ -88,7 +91,7 @@ function buildPopularityDiv(){
 function buildCommentForm(){
     // make a form element and put it in the body
     const form = document.createElement('form');
-    form.innerHTML = '<label id="text-area-label" for="text-area">Comment: </label><textarea id="text-area" name="text-area" rows="4" cols="25"></textarea><input type="submit" id="submit-button" value="Submit">';
+    form.innerHTML = '<label id="text-area-label" for="text-area">Comment: </label><textarea id="text-area" name="text-area" rows="4" cols="25"></textarea><input type="submit" id="submit-button" class="hover" value="Submit">';
     document.body.append(form);
 }
 

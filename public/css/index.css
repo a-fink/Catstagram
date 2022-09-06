@@ -132,3 +132,12 @@ form{
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
+
+/* hover effects for all buttons */
+.hover{
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hover:hover{
+    background-color: rgba(237, 233, 232, 0.6);
+}
