@@ -167,4 +167,8 @@ form{
         row-gap: 5px;
         justify-content: center;
     }
+
+    #text-area-label, #text-area{
+        margin-right: 0;
+    }
 }
