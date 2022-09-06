@@ -154,10 +154,12 @@ form{
 @media screen and (max-width: 500px) {
     img, #popularity-div {
         max-width: 400px;
+        margin: 0 auto;
     }
 
     #comments-div{
         width: 400px;
+        margin: 0 auto;
     }
 
     form{
