@@ -75,7 +75,7 @@ h3{
 /* submit comments form */
 form{
     min-width: 500px;
-    max-width: 800px;
+    max-width: 750px;
     margin: 10px 0 20px 0;
 
     display: flex;
@@ -141,4 +141,21 @@ form{
 
 .hover:hover{
     background-color: rgba(237, 233, 232, 0.6);
+}
+
+/* breakpoint for mobile screens */
+@media screen and (max-width: 500px) {
+    img, #popularity-div {
+        max-width: 450px;
+    }
+
+    #comments-div{
+        width: 450px;
+    }
+
+    form{
+        min-width: 80%;
+        max-width: 100%;
+        margin: 10px auto 20px auto;
+    }
 }
