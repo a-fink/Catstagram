@@ -165,5 +165,6 @@ form{
         max-width: 90%;
         margin: 10px auto 20px auto;
         row-gap: 5px;
+        justify-content: center;
     }
 }
