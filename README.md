@@ -11,3 +11,4 @@ Please see assignment and phase readme's for project's given instructions.
 - HTML
 - CSS
 - Javascript - build/manipulate elements & styling, write/read from session storage, fetch from an API and parse the response
+- replit.com - for hosting that allows a custom http node.js server
