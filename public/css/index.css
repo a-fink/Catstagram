@@ -1,3 +1,10 @@
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -155,7 +162,7 @@ form{
 
     form{
         min-width: 400px;
-        max-width: 100%;
+        max-width: 400px;
         margin: 10px auto 20px auto;
         row-gap: 5px;
     }
