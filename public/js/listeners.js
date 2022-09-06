@@ -1,4 +1,5 @@
 import { setImageUrl } from "./elements.js";
+import { storeComment, storeScore, clearSessionComments } from "./storage.js";
 
 // add listeners to all necessary elements on the page
 // exported so main js script can call it
@@ -44,6 +45,8 @@ function upvoteButtonHandler(event){
     let score = Number(span.innerText);
     score++;
 
+    // store the new score in the session storage and then update it in the span
+    storeScore(score);
     span.innerText = score;
 }
 
@@ -64,6 +67,8 @@ function downvoteButtonHandler(event){
     let score = Number(span.innerText);
     score--;
 
+    // store the new score in the session storage and then update it in the span
+    storeScore(score);
     span.innerText = score;
 }
 
@@ -84,9 +89,11 @@ function formHandler(event){
     const textarea = document.getElementById('text-area');
     const value = textarea.value;
 
-    // if the text area had content (length of string > 0) call add comment helper
+    // if the text area had content (length of string > 0)
+    // call add comment helper and function to store comment in session storage
     if(value.length > 0){
         addComment(value);
+        storeComment(value);
     }
 
     textarea.value = '';
@@ -115,13 +122,20 @@ function clearScore(){
     // get the span with the score & set the text in it to 0
     const span = document.getElementById('score-span');
     span.innerText = '0';
+
+    // update the score stored in the session storage to 0
+    storeScore('0');
 }
 
 // function to clear all comments in the comments section (called when new cat image is loaded)
 function clearComments(){
-    // get the comments div, empty the inner html, and remove the border class
+    // get the comments div, empty the inner html
     const div = document.getElementById('comments-div');
     div.innerHTML = '';
 
-    if(div.classList.contains('border-div')) div.classList.remove('border-div')
+    // remove the border class if it's on there
+    if(div.classList.contains('border-div')) div.classList.remove('border-div');
+
+    // clear the comments stored in sessionStorage
+    clearSessionComments();
 }
