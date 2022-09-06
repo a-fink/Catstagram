@@ -8,7 +8,7 @@ Users can also ask for a new cat image which clears all stored values and allows
 Please see assignment and phase readme's for project's given instructions.
 
 ## Technologies used
-- HTML
-- CSS
-- Javascript - build/manipulate elements & styling, write/read from session storage, fetch from an API and parse the response
+- HTML5
+- CSS3
+- Javascript / ES6 - build/manipulate elements & styling, write/read from session storage, fetch from an API and parse the response
 - replit.com - for hosting that allows a custom http node.js server
