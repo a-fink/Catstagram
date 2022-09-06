@@ -146,15 +146,15 @@ form{
 /* breakpoint for mobile screens */
 @media screen and (max-width: 500px) {
     img, #popularity-div {
-        max-width: 450px;
+        max-width: 400px;
     }
 
     #comments-div{
-        width: 450px;
+        width: 400px;
     }
 
     form{
-        min-width: 80%;
+        min-width: 400px;
         max-width: 100%;
         margin: 10px auto 20px auto;
         row-gap: 5px;
