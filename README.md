@@ -19,7 +19,7 @@
 - Firebase Hosting
 
 ## Possible Future Improvements
-- I chose to stick with CSS for the first version of this project so I could focus on the JavaScript functionality. For future iterations I would like to exploring adding additional styling, perhaps with Bootstrap or React.
+- I chose to stick with CSS for the first version of this project so I could focus on the JavaScript functionality. For future iterations I would like to explore adding additional styling, perhaps with Bootstrap or React.
 - Utilize additional features of [The Cat API](https://thecatapi.com/) such as allowing users to request images by breed, allowing them to favorite images, etc
 
 ### Based On
