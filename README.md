@@ -1,5 +1,7 @@
 # Catsagram Project
 
+[Live site](https://catstagram-8f039.web.app/)
+
 ## Goal
 - To cement my knowledge of frontend JavaScript, API interactions, and browser storage by building a responsive single-page social media style site.
 - To get familiar with Firebase hosting
