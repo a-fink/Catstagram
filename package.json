@@ -1,7 +1,7 @@
 {
   "name": "catstagram",
   "version": "1.0.0",
-  "description": "## Goal To build a single-page social media esque site. Users can view a random cat image drawn from the `https://thecatapi.com/` API. Users can then upvote/downvote it and make comments about it. All of which are then stored in session storage and retrieved if the user refreshes the page. Users can also ask for a new cat image which clears all stored values and allows for new upvoting/downvoting and commenting.",
+  "description": "## To cement my knowledge of frontend JavaScript, API interactions, and browser storage by building a responsive single-page social media style site.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

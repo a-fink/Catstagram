@@ -1,4 +1,4 @@
-// Your code here
+// import element and listener functions
 import { buildAllElements} from "./elements.js";
 import { addAllListeners } from "./listeners.js";
 
